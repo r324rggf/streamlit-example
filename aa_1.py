@@ -9,7 +9,6 @@ import pandas as pd     #read from text file with comma as separator
 # Data
 import numpy as np
 # Visualization
-import matplotlib  #data visualization library
 import matplotlib.colors as mcolors
 import matplotlib.pyplot as plt  #'pyplot' module to customize plots
 import seaborn as sns  #library of data visualization on top of Matplotlib for statistical graphics
