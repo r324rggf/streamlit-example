@@ -9,8 +9,6 @@ import pandas as pd     #read from text file with comma as separator
 # Data
 import numpy as np
 # Visualization
-import subprocess
-subprocess.call(['pip', 'install', 'matplotlib'])
 import matplotlib
 import matplotlib.colors as mcolors
 import matplotlib.pyplot as plt  #'pyplot' module to customize plots
