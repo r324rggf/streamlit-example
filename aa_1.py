@@ -104,6 +104,56 @@ pd.set_option('expand_frame_repr', False)
 pd.set_option('display.max_rows', None)
 #print only the top 5 rows
 
+# Dictionary for renaming columns with the first letter capitalized
+column_mapping = {
+    'web1a': 'Twitter',
+    'web1b': 'Instagram',
+    'web1c': 'Facebook',
+    'web1d': 'Snapchat',
+    'web1e': 'YouTube',
+    'web1f': 'WhatsApp',
+    'web1g': 'Pinterest',
+    'web1h': 'LinkedIn',
+}
+
+# Rename columns with the first letter capitalized
+df.rename(columns=column_mapping, inplace=True)
+
+# Replace numerical values with corresponding alphabetical labels
+replace_dict = {1: 'Yes', 2: 'No', 8: "Don't know", 9: 'Refused'}
+df.replace(replace_dict, inplace=True)
+
+
+# Streamlit app
+st.title("Social Media Usage")
+
+# Bar plots for each item
+for item in column_mapping.values():
+    st.subheader(item)
+    fig, ax = plt.subplots()
+    sns.countplot(x=item, data=df, palette='viridis', ax=ax)
+    ax.set_title(item)
+    ax.set_xlabel('Response')
+    ax.set_ylabel('Count')
+    st.pyplot(fig)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Page title
 st.title("Social Media Analysis - 2021")
 
