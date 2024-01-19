@@ -57,7 +57,7 @@ pd.set_option('display.max_rows', None)
 #print only the top 5 rows
 
 # Page title
-st.title("Social Media Usage Analysis - 2018")
+st.title("Social Media Analysis - 2018")
 
 # Section 1: Internet Usage Countplot
 st.header("Internet Usage Count")
@@ -105,7 +105,7 @@ pd.set_option('display.max_rows', None)
 #print only the top 5 rows
 
 # Page title
-st.title("Social Media Usage Analysis - 2021")
+st.title("Social Media Analysis - 2021")
 
 # Section 1: Internet Usage Countplot
 st.header("Internet Usage Count")
