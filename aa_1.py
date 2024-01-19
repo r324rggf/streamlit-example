@@ -96,13 +96,6 @@ st.pyplot(fig_age)
 
 
 
-df = pd.read_csv('https://raw.githubusercontent.com/r324rggf/streamlit-example/master/2021aa2.csv', sep=",")
-#To configure to display all columns in just one line.
-#By default is true, it will display the dataset based on your screen size, if have many columns and it cannot fit into the screen, the columns will be display at the bottom.
-pd.set_option('expand_frame_repr', False)
-#To configure to display all the rows. By default, says if have 500 rows of data, it will show only the head & tail of the data
-pd.set_option('display.max_rows', None)
-#print only the top 5 rows
 
 # Dictionary for renaming columns with the first letter capitalized
 column_mapping = {
@@ -153,6 +146,34 @@ for item in column_mapping.values():
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+df = pd.read_csv('https://raw.githubusercontent.com/r324rggf/streamlit-example/master/2021aa2.csv', sep=",")
+#To configure to display all columns in just one line.
+#By default is true, it will display the dataset based on your screen size, if have many columns and it cannot fit into the screen, the columns will be display at the bottom.
+pd.set_option('expand_frame_repr', False)
+#To configure to display all the rows. By default, says if have 500 rows of data, it will show only the head & tail of the data
+pd.set_option('display.max_rows', None)
+#print only the top 5 rows
 
 # Page title
 st.title("Social Media Analysis - 2021")
