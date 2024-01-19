@@ -95,10 +95,6 @@ plt.ylabel("Frequency")
 st.pyplot(fig_age)
 
 
-st.markdown("2021--Data")
-
-# Apply custom CSS
-st.markdown(f"<style>{custom_css}</style>", unsafe_allow_html=True)
 
 df = pd.read_csv('https://raw.githubusercontent.com/r324rggf/streamlit-example/master/2021aa2.csv', sep=",")
 #To configure to display all columns in just one line.
