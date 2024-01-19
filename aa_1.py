@@ -48,7 +48,7 @@ custom_css = """
 # Apply custom CSS
 st.markdown(f"<style>{custom_css}</style>", unsafe_allow_html=True)
 
-df = pd.read_csv('/workspaces/streamlit-example/aa2/2018.csv', sep=",")
+df = pd.read_csv('https://github.com/r324rggf/streamlit-example/blob/master/January%203-10%2C%202018%20-%20Core%20Trends%20Survey%20-%20CSV.csv', sep=",")
 #To configure to display all columns in just one line.
 #By default is true, it will display the dataset based on your screen size, if have many columns and it cannot fit into the screen, the columns will be display at the bottom.
 pd.set_option('expand_frame_repr', False)
@@ -101,7 +101,7 @@ st.markdown("2021--Data")
 st.markdown(f"<style>{custom_css}</style>", unsafe_allow_html=True)
 
 /workspaces/streamlit-example/aa2/2021.csv
-df = pd.read_csv('/workspaces/streamlit-example/aa2/2021.csv', sep=",")
+df = pd.read_csv('https://github.com/r324rggf/streamlit-example/blob/master/2021aa2.csv', sep=",")
 #To configure to display all columns in just one line.
 #By default is true, it will display the dataset based on your screen size, if have many columns and it cannot fit into the screen, the columns will be display at the bottom.
 pd.set_option('expand_frame_repr', False)
